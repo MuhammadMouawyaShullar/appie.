@@ -1,0 +1,428 @@
+/****************/
+/* Below (84em*16px) 1344px smaller desktops */
+/****************/
+
+@media (max-width: 84em) {
+    .hero{
+        max-width: 128rem;
+    }
+    /* .hero-img{
+        width: 90% !important; 
+    } */
+    .heading-primary{
+        font-size: 4.4rem !important;
+    }
+    .view-Marketing{
+        height: 40rem !important;
+    }
+    .Marketing-img {
+        width: 85% !important;
+    }
+}
+
+/****************/
+/* Below (75em*16px) 1200px Landscape Tablets */
+/****************/
+
+@media (max-width: 75em) {
+    html{
+        /* 10 / 16 = 0.625 = 62.5% */
+        font-size: 62.5% !important;
+    }
+    .hero{
+        gap: 4.8rem 0 !important;
+        grid-template-columns: 1.3fr 1.7fr !important;
+    }
+    /* .hero-img{
+        width: 90% !important;
+    } */
+    .grid{
+        column-gap: 4.8rem !important;
+    }
+    .heading-primary{
+        font-size: 4rem !important;
+    }
+    .heading-secondary{
+        font-size: 3.2rem !important;
+    }
+    .heading-tertiary{
+        font-size: 1.6rem !important;
+    }
+    .view-Marketing{
+        height: 42rem !important;
+    }
+    .Marketing-img {
+        width: 75% !important;
+    }
+    .box-two{
+        flex-direction: column !important;
+    }
+    .nav-col-m {
+        justify-content: center !important;
+        column-gap: 8rem;
+    }
+    .gallery-diversified{
+        padding: 0 8rem !important;
+    }
+}
+
+
+
+/****************/
+/* Below (59em*16px) 944px Tablets */
+/****************/
+
+@media (max-width: 59em) {
+    html{
+        /* 8 / 16 = 0.5 = 50% */
+        font-size: 50% !important;
+    }
+    .right-header-btn{
+        display: flex;
+        column-gap: 2.4rem;
+    }
+    .hero{
+        grid-template-columns: 1.8fr 1.2fr !important;
+        padding-right: 0 !important;
+       /* gap: 6.4rem !important; */
+    }
+    .hero-text-box,
+    .hero-img-box{
+        text-align: center;
+    }
+
+    /* Mobile Navigation */
+    .btn-mobile-nav{
+        display: block !important;
+        z-index: 999 !important;
+    }
+    .main-nav{
+        background-color:rgba(255, 255, 255, 0.97) !important;
+        position: absolute !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100vh !important;
+        z-index: 55 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transform: translateX(100%) !important;
+        transition: all 1s ease-in-out !important;
+
+        /*hide nav*/
+        /*display: none;*/
+
+        /* 1- hide it visually*/
+        opacity: 0 !important;
+
+        /* 2- make it unaccessible to mouse and keyboard*/
+        pointer-events: none !important;
+
+        /* 3- hide t from screeen readers*/
+        visibility: hidden !important;
+    }
+    .nav-open .main-nav{
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        visibility: visible !important;
+        transform: translateX(0) !important;
+    }
+    .nav-open .icon-mobile-nav[name="close-outline"]{
+        display: block !important;
+    }
+    .nav-open .icon-mobile-nav[name="menu-outline"]{
+        display: none !important;
+    }
+    .main-nav-list{
+        flex-direction: column !important;
+        gap: 4.8rem !important;
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited{
+        font-size: 1.6rem !important;
+        padding: 1.8rem 1.4rem !important;
+    }
+    .sticky .header{
+        height: 7.2rem !important;
+    }
+}
+/****************/
+/* Below (54em*16px) 864px */
+/****************/
+
+@media (max-width: 54em) {
+    html{
+        /* 7.2 / 16 = 0.45 = 45% */
+        font-size: 45% !important;
+    }
+    .grid--3-cols,.grid--4-cols{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+    .card-specifications{
+        text-align: center;
+    }
+    .subheading{
+        display: block !important;
+    }
+    .card-LR:nth-child(3){
+        grid-column: 1/-1 !important;
+        justify-self: center !important;
+        margin-top: 2rem !important;
+    }
+    .gallery-diversified1{
+        display: grid !important;
+        grid-template-columns: repeat(4,1fr) !important;
+        row-gap: 2rem !important;
+        column-gap: 9.6rem !important;
+    }
+    .gallery-diversified2{
+        display: grid !important;
+        grid-template-columns: repeat(4,1fr) !important;
+        column-gap: 9.6rem !important;
+        padding: 2.4rem 0 !important;
+    }
+    .pic-logo:nth-child(5){
+        grid-column: 2/3;
+    }
+    .pic-logo:nth-child(6){
+        grid-column: 3/4;
+    }
+}
+
+/****************/
+/* Below (46.5em*16px) 744px Smaller Tablets */
+/****************/
+
+@media (max-width: 46.5em) {
+    .section-features .grid--2-cols{
+        grid-template-columns: 1fr !important;
+        row-gap: 2rem !important;
+    }
+    .box-list-item{
+        display: grid !important;
+        grid-template-columns: repeat(2,1fr) !important;
+        gap: 2.4rem !important;
+    }
+    .list-box-green{
+        grid-column: 1/-1 !important;
+        justify-self: center !important;
+    }
+    .box-img-full{
+        text-align: center !important;
+    }
+    .img-full{
+        width: 80% !important;
+    }
+    .sticky .header{
+        height: 8rem !important;
+    }
+    .icons{
+        flex-wrap: wrap !important;
+        column-gap: 12rem !important;
+        justify-content: center !important;
+    }
+}
+
+    /****************/
+/* Below (40em*16px) 640px breaking point */
+/****************/
+
+@media (max-width: 40em) {
+    html{
+        /* 6.3 / 16 = 0.39 = 39% */
+        font-size: 39%;
+    }
+    .grid--2-cols,
+    .grid--3-cols,
+    .grid--4-cols,
+    .hero,
+    .images-how-it-work,
+    .box-list-item,
+    .grid--footer{
+        grid-template-columns: 1fr !important;
+    }
+    .section-features .grid--2-cols{
+        grid-template-columns: 1fr !important;
+        row-gap: 6.4rem !important;
+    }
+    .list-box-green{
+        justify-self: inherit !important;
+    }
+    .hero-img-box{
+        text-align: end !important;
+    }
+    .hero-img{
+        width: 40% !important;
+    }
+    .container-text-box{
+        max-width: none !important;
+        padding: 0 8rem 0 !important;
+    }
+    .space-between{
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        row-gap: 2rem !important;
+        text-align: center !important;
+    }
+    .view-Marketing{
+        height: auto !important;
+        padding: 3.6rem 3.6rem 0 !important;
+    }
+    .Marketing-img-box{
+        display: none !important;
+    }
+    .Marketing-text-box {
+        padding: 0 !important;
+        grid-column: 1/-1 !important;
+        text-align: center;
+    }
+    .Marketing-text-box .heading-secondary br{
+        display: none !important;
+    }
+    .box-two {
+        flex-wrap: wrap;
+        flex-direction: row !important;
+        text-align: start !important;
+    }
+    .icons{
+        display: grid !important;
+        row-gap: 2.4rem !important;
+        grid-template-columns: 1fr !important;
+    }
+    .container-How-it-work .images-how-it-work{
+        position: relative;
+    }
+    .container-How-it-work .text-how{
+        margin-bottom: 68rem;
+        padding: 0;
+    }
+    .left-row{
+        display: none !important;
+    }
+    .img-how2{
+        position: absolute;
+        top: 50rem;
+    }
+    .container-BTD .small-text-BTD br{
+        display: none;
+    }
+    .card-LR:nth-child(3) {
+        justify-self: inherit!important;
+    }
+    .card-middle{
+        margin-top: 2rem !important;
+    }
+    .container-testimonials{
+        display: block !important;
+        padding: 4.8rem !important;
+        text-align: center;
+    }
+    .box-img-person{
+        margin-bottom: 2.4rem;
+    }
+    .bottom-text{
+        display: block !important;
+    }
+    .btn-t-RL{
+        display: none !important;
+    }
+    .gallery-diversified {
+        padding: 0 !important;
+    }
+    .gallery-diversified1,
+    .gallery-diversified2{
+        grid-template-columns: repeat(3,1fr) !important;
+        gap: 2.4rem !important;
+    }
+    .pic-logo{
+        text-align: center;
+    }
+        .logo-col, .contacts{
+            align-items: center;
+        }
+        .nav-col-m {
+            margin-top: 2.4rem;
+            flex-direction: column;
+            align-items: center;
+            row-gap: 2.4rem;
+        }
+        .footer-heading{
+            margin-top: 2.4rem;
+            text-align: center;
+        }
+        .botoom-footer {
+            flex-direction: column;
+            row-gap: 2.4rem;
+            align-items: center;
+        }
+        container-How-it-work .text-how {
+            margin-bottom: 52rem !important;
+        }
+        .img-how2 {
+            width: 90% !important;
+        }
+        .img-how1 {
+            width: 90% !important;
+        }
+} 
+
+/****************/
+/* Below (35em*16px) 560px Smaller Tablets */
+/****************/
+
+@media (max-width: 35em) {
+    html{
+        /* 6 / 16 = 0.375 = 37.5% */
+        font-size: 37.5% !important;
+    }
+    .header {
+        padding: 3.6rem 2.4em 9.6rem 2.4rem !important;
+    }
+    .section-hero {
+        padding: 0 !important;
+    }
+    .hero {
+        padding: 9.6rem 0 2.4rem 2.4rem !important;
+    }
+    .main-nav-link:link, .main-nav-link:visited {
+        font-size: 0.8rem !important;
+        padding: 1.8rem 1.2rem !important;
+    }
+    .container-How-it-work .text-how {
+        margin-bottom: 68rem !important;
+    }
+    .container-BTD {
+        padding: 9.6rem 8rem !important;
+    }
+}
+
+/****************/
+/* Below (25em*16px) 400px */
+/****************/
+
+@media (max-width: 25em) {
+    .container-How-it-work .text-how {
+    margin-bottom: 54rem !important;
+    }
+    .gallery-diversified1,
+    .gallery-diversified2{
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 2.4rem !important;
+    }
+    .container-BTD {
+        padding: 4.8rem 8rem !important;
+    }
+}
+
+/****************/
+/* Below (20em*16px) 320px */
+/****************/
+
+@media (max-width: 20em) {
+    .container-How-it-work .text-how {
+    margin-bottom: 42rem !important;
+    }
+}
